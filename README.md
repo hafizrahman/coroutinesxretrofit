@@ -5,6 +5,11 @@ The project is a normal MVVM Android app. The app pulls a list of categories ava
 
 Being called using Retrofit, that URL path returns a JSON array of categories. For simplicity sake, the app then picks the first Category and displays its `link` property on the app.
 
+## Screenshot
+Here's what the app might show when being run properly:
+
+![Screenshot of couroutinesxretrofit](https://i.imgur.com/32rM6ka.png)
+
 ## Resources
  
 - ["Suspend what you’re doing: Retrofit has now Coroutines support!"](https://proandroiddev.com/suspend-what-youre-doing-retrofit-has-now-coroutines-support-c65bd09ba067): The bulk of the code is inspired by this tutorial.
