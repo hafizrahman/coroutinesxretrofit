@@ -30,10 +30,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun displaySomething() {
         viewModel.fetchedCategories.observe(this, Observer {
-            /*
-            By default, the JSON returns an array of Category.
-            Here we are displaying the "link" property of the first Category.
-             */
+
+            // By default, the JSON returns an array of Category.
+            // Here we are displaying the "link" property of the first Category.
             texttext.text = it[0].link
         })
     }

@@ -1,5 +1,6 @@
 package studio.oldblack.coroutinesxretrofit
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
@@ -10,7 +11,10 @@ class MainViewModel: ViewModel() {
     private val repository: Repository = Repository()
 
     val fetchedCategories: LiveData<List<Category>> = liveData(Dispatchers.IO) {
-        val data = repository.getCategories()
-        emit(data)
+        try {
+            emit(repository.getCategories())
+        } catch(e: Exception) {
+            Log.e("Exception happens", "${e.message}")
+        }
     }
 }
