@@ -1,0 +1,125 @@
+[
+  {
+    "id": 22,
+    "count": 1,
+    "description": "",
+    "link": "http://freebbble.com/category/blog/",
+    "name": "Blog",
+    "slug": "blog",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [ ],
+    "acf": [ ],
+    "_links": {
+      "self": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/categories/22"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/posts?categories=22"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "count": 4134,
+    "description": "",
+    "link": "http://freebbble.com/category/freebies/",
+    "name": "Freebies",
+    "slug": "freebies",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [ ],
+    "acf": [ ],
+    "_links": {
+      "self": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/categories/1"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/posts?categories=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "count": 0,
+    "description": "",
+    "link": "http://freebbble.com/category/premium/",
+    "name": "Premium",
+    "slug": "premium",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [ ],
+    "acf": [ ],
+    "_links": {
+      "self": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/categories/26"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://freebbble.com/wp-json/wp/v2/posts?categories=26"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
