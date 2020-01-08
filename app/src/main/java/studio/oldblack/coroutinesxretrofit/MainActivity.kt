@@ -13,7 +13,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
 
+    override fun onStart() {
+        super.onStart()
         /*
            This is a test app to try coroutines with Retrofit.
            ---------------------------------------------------------------------------------
@@ -23,7 +26,6 @@ class MainActivity : AppCompatActivity() {
            The model for the data is available in models/Category.kt , while the example
            JSON output for the URL above is shown in the example.json file in models/ .
          */
-
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
         displaySomething()
     }
@@ -35,5 +37,25 @@ class MainActivity : AppCompatActivity() {
             // Here we are displaying the "link" property of the first Category.
             texttext.text = it[0].link
         })
+    }
+
+    override fun onStop() {
+        super.onStop()
+
+        /*
+        This overriden function is only here for educational purposes.
+
+        Here we don't really need to remove the observer created in displaySomething(),
+        because according to documentation:
+
+        "An observer added with a Lifecycle will be automatically removed if the corresponding
+         Lifecycle moves to Lifecycle.State.DESTROYED state. This is especially useful for
+         activities and fragments where they can safely observe LiveData and not worry about
+         leaks: they will be instantly unsubscribed when they are destroyed."
+
+         (https://developer.android.com/reference/androidx/lifecycle/LiveData.html)
+
+         If we were using some other libraries, we might need to be unregistering things here.
+         */
     }
 }
